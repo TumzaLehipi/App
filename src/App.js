@@ -16,14 +16,16 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import LifecycleA from './components/LifecycleA'
 import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table'
 
 
 export class App extends Component {
   render() {
     return (
       <div className='App'>
-        <FragmentDemo />
+        <Table />
         {/* 
+            <FragmentDemo />
             <LifecycleA />
            <h1 className='error'> Error</h1>
         <h1 className={styles.success}>Success</h1>
