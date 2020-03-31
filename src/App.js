@@ -17,14 +17,17 @@ import styles from './appStyles.module.css'
 import LifecycleA from './components/LifecycleA'
 import FragmentDemo from './components/FragmentDemo'
 import Table from './components/Table'
+import PureComp from './components/PureComp'
+import ParentComp from './components/ParentComp'
 
 
 export class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Table />
+        <ParentComp />
         {/* 
+          <Table />
             <FragmentDemo />
             <LifecycleA />
            <h1 className='error'> Error</h1>
