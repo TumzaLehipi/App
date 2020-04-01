@@ -21,6 +21,7 @@ import PureComp from './components/PureComp'
 import ParentComp from './components/ParentComp'
 import RefsDemo from './components/RefsDemo'
 import FocusInput from './components/FocusInput'
+import FRParentInput from './components/FRParentInput'
 
 
 export class App extends Component {
@@ -28,29 +29,29 @@ export class App extends Component {
     return (
       <div className='App'>
 
-        <FocusInput/>
-
+        <FRParentInput />
         {/* 
-             <RefsDemo />
-           <ParentComp />
-          <Table />
+            <FocusInput />
+            <RefsDemo />
+            <ParentComp />
+            <Table />
             <FragmentDemo />
             <LifecycleA />
-           <h1 className='error'> Error</h1>
-        <h1 className={styles.success}>Success</h1>
-           <Inline />
-          <StyleSheet primary={true} />
-                <NameList />
-          <UserGreeting />
-           <ParentComponent />
-           <EventBind />
-          <FunctionClick />
-        <ClassClick />
-          <Counter />
-        <Message />
-        <Greet name='tumza' lastName='lehipi' />
-        <Welcome name='tumza' lastName='lehipi' />
-      <Welcome name='tshepo' lastName='lehipi' /> */}
+            <h1 className='error'> Error</h1>
+            <h1 className={styles.success}>Success</h1>
+            <Inline />
+            <StyleSheet primary={true} />
+            <NameList />
+            <UserGreeting />
+            <ParentComponent />
+            <EventBind />
+            <FunctionClick />
+            <ClassClick />
+            <Counter />
+            <Message />
+            <Greet name='tumza' lastName='lehipi' />
+            <Welcome name='tumza' lastName='lehipi' />
+            <Welcome name='tshepo' lastName='lehipi' /> */}
       </div>
     )
   }
