@@ -25,6 +25,12 @@ import FRParentInput from './components/FRParentInput'
 import Hero from './components/Hero'
 import ErrorBoundery from './components/ErrorBoundery'
 import PortalDemo from './components/PortalDemo'
+import ClickCounter from './components/ClickCounter'
+import HoverCounter from './components/HoverCounter'
+import ClickCounterTwo from './components/ClickCounterTwo'
+import HoverCounterTwo from './components/HoverCounterTwo'
+import User from './components/User'
+import CounterTwo from './components/CounterTwo'
 
 
 export class App extends Component {
@@ -32,10 +38,29 @@ export class App extends Component {
     return (
 
       <div className='App'>
+          <CounterTwo 
+            render = { (count, incrementCount) => (
+              <ClickCounterTwo count = {count} incrementCount = {incrementCount} />
+              )}
+            />
+            <CounterTwo 
+              render = { (count, incrementCount) => (
+              <HoverCounterTwo count = {count} incrementCount = {incrementCount} />
+              )}
+            />
+          
 
-        <PortalDemo />
         {/*  
+          <ClickCounterTwo />
+          <HoverCounterTwo />
+          <User render= {(isLoggedIn) => isLoggedIn ? 'Tumelo' : 'Guest'}/>
 
+          ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+          <ClickCounter name = 'TumZa'/>
+          <HoverCounter />
+          ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           <PortalDemo />
+           +++++++++++++++++++++++++++++++++++++++++++++++++++++++
             <ErrorBoundery>
               <Hero heroName="Batman" />
             </ErrorBoundery>
@@ -47,7 +72,7 @@ export class App extends Component {
             <ErrorBoundery>
               <Hero heroName="joker " />
             </ErrorBoundery>
-
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++
             <FRParentInput />
             <FocusInput />
             <RefsDemo />
@@ -72,6 +97,7 @@ export class App extends Component {
             <Welcome name='tshepo' lastName='lehipi' /> */
         }
       </div>
+      
     )
   }
 }
