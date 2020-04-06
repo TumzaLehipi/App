@@ -31,6 +31,7 @@ import ClickCounterTwo from './components/ClickCounterTwo'
 import HoverCounterTwo from './components/HoverCounterTwo'
 import User from './components/User'
 import CounterTwo from './components/CounterTwo'
+import ComponentC from './components/ComponentC'
 
 
 export class App extends Component {
@@ -38,6 +39,10 @@ export class App extends Component {
     return (
 
       <div className='App'>
+          
+          <ComponentC />
+
+        {/*  
           <CounterTwo 
             render = { (count, incrementCount) => (
               <ClickCounterTwo count = {count} incrementCount = {incrementCount} />
@@ -48,9 +53,7 @@ export class App extends Component {
               <HoverCounterTwo count = {count} incrementCount = {incrementCount} />
               )}
             />
-          
 
-        {/*  
           <ClickCounterTwo />
           <HoverCounterTwo />
           <User render= {(isLoggedIn) => isLoggedIn ? 'Tumelo' : 'Guest'}/>
