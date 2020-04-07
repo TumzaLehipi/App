@@ -32,6 +32,7 @@ import HoverCounterTwo from './components/HoverCounterTwo'
 import User from './components/User'
 import CounterTwo from './components/CounterTwo'
 import ComponentC from './components/ComponentC'
+import { UserProvider } from './components/userContext'
 
 
 export class App extends Component {
@@ -39,8 +40,10 @@ export class App extends Component {
     return (
 
       <div className='App'>
-          
-          <ComponentC />
+          <UserProvider  value = 'Tumza' >
+            <ComponentC />
+          </UserProvider>
+       
 
         {/*  
           <CounterTwo 
