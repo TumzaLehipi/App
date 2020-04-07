@@ -32,7 +32,7 @@ import HoverCounterTwo from './components/HoverCounterTwo'
 import User from './components/User'
 import CounterTwo from './components/CounterTwo'
 import ComponentC from './components/ComponentC'
-import { UserProvider } from './components/userContext'
+import { UserProvider } from './components/UserContext'
 
 
 export class App extends Component {
